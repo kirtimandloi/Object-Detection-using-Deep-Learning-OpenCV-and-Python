@@ -51,8 +51,9 @@ In this we are trying to capture video from an IP camera or machine camera using
 
 ### For IP camera access  
 Make sure to replace "URL corresponds to a webcam feed" with the actual URL of your IP camera stream.
-This code will capture video from the provided URL, detect objects in each frame using the detect_objects function, draw bounding boxes around detected objects, save the processed video and display the processed video in a window.
+
+Given code (object detection using Machine camera ( Real Time ).ipynb) will capture video from the provided URL, detect objects in each frame using the detect_objects function, draw bounding boxes around detected objects, save the processed video and display the processed video in a window.
 
 ### For Machine camera access 
-Given code (Object detcetion using Machine Camera (Real Time)) captures video from the webcam, processes each frame to detect objects using the detect_objects function, and displays the processed video in a window. 
+Given code (object detection using webcam ( Real Time ).ipynb) captures video from the webcam, processes each frame to detect objects using the detect_objects function, and displays the processed video in a window. 
 
