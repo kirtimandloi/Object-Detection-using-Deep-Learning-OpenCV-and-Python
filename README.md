@@ -34,8 +34,25 @@ These files are crucial components for performing object detection using YOLOv3 
 #### COCO Dataset Website-COCO - Common Objects in Context.
 
 ## Object Detection in images 
+The detect_objects function takes an image as input and returns a list of detected objects along with their bounding boxes and confidences.
 
+(Parameter) img: Input image (numpy array) where objects are to be detected.
 
+#### detected_objects:
+A list containing dictionaries for each detected object. Each dictionary contains the following keys:
+##### class_id:The ID of the detected object class.
+##### confidence: The confidence score of the detection.
+##### box: The bounding box coordinates of the detected object in the format [x, y, w, h].
 
+This code will draw bounding boxes around detected objects on the original image and display the result using OpenCV.
 
+## Object Detection in Real Time
+In this we are trying to capture video from an IP camera or machine camera using OpenCV, detect objects in each frame using a function called detect_objects, and then save the processed video to a file.
+
+### For IP camera access  
+Make sure to replace "URL corresponds to a webcam feed" with the actual URL of your IP camera stream.
+This code will capture video from the provided URL, detect objects in each frame using the detect_objects function, draw bounding boxes around detected objects, save the processed video and display the processed video in a window.
+
+### For Machine camera access 
+Given code (Object detcetion using Machine Camera (Real Time)) captures video from the webcam, processes each frame to detect objects using the detect_objects function, and displays the processed video in a window. 
 
